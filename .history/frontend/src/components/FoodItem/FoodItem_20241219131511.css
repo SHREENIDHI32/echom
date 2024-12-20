@@ -1,0 +1,42 @@
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Reduced gap for compactness */
+    padding: 4px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.food-item-counter button {
+    width: 30px; /* Reduced width for compact buttons */
+    height: 30px; /* Reduced height */
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    font-size: 16px; /* Adjusted font size */
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.food-item-counter button:hover {
+    transform: scale(1.1); /* Subtle hover effect */
+}
+
+/* Green add button */
+.food-item-counter .add-btn {
+    background-color: #28a745; /* Green color */
+    color: white;
+}
+
+/* Red decrease button */
+.food-item-counter .decrease-btn {
+    background-color: #dc3545; /* Red color */
+    color: white;
+}

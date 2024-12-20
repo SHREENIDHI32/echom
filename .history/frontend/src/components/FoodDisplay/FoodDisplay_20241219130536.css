@@ -1,0 +1,28 @@
+.food-display {
+    margin-top: 30px;
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.food-display-list img {
+    width: 100%; /* Make images responsive within their grid item */
+    height: 200px; /* Set a fixed height for uniform appearance */
+    object-fit: cover; /* Maintain aspect ratio and crop excess parts */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.food-display-list img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}

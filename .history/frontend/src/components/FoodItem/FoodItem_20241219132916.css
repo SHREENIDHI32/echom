@@ -1,0 +1,63 @@
+.food-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px; /* Increased gap for better alignment */
+    overflow: hidden; /* To prevent the plus icon from overflowing */
+}
+
+.food-item-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* Adjust the image styles to fit your design */
+}
+
+.plus-icon {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for the icon */
+}
+
+.plus-icon, .minus-icon {
+    display: none; /* Initially hide both icons */
+}
+
+.food-item-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.food-item-desc {
+    color: #676767;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.food-item-price {
+    color: #FF4C24;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+}
+
+.food-item:hover .plus-icon {
+    display: block; /* Show the plus icon on hover */
+}
+
+/* When the plus icon is clicked, show the minus icon */
+.food-item.open .plus-icon {
+    display: none;
+}
+
+.food-item.open .minus-icon {
+    display: block;
+}

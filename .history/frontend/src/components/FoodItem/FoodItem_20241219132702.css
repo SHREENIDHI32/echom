@@ -1,0 +1,21 @@
+.food-item-info {
+    padding: 10px; /* Slightly reduced padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items closer to the top */
+    gap: 5px; /* Reduced space between elements */
+}
+
+.food-item-desc {
+    color: #676767;
+    font-size: 12px;
+    margin: 5px 0; /* Reduced margin */
+}
+
+.food-item-price {
+    color: #FF4C24;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0; /* Removed additional margin */
+    text-align: left;
+}

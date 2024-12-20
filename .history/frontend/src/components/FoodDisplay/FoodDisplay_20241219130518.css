@@ -1,0 +1,62 @@
+.food-display {
+    margin-top: 30px;
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+    text-align: center; /* Center align the heading for better aesthetics */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Responsive grid layout */
+    margin-top: 30px;
+    gap: 20px; /* Reduced spacing for a compact look */
+    padding: 0 10px; /* Add horizontal padding for better spacing */
+}
+
+.food-display-list img {
+    width: 100%; /* Make images responsive within their grid item */
+    height: 180px; /* Reduced height slightly for a balanced appearance */
+    object-fit: cover; /* Maintain aspect ratio and crop excess parts */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+.food-display-list img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.food-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align content inside the card */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+    transition: transform 0.2s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.food-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 5px; /* Adjust spacing around the title */
+}
+
+.food-card p {
+    font-size: 16px;
+    color: #ff5722; /* Accent color for pricing */
+    font-weight: bold;
+    margin: 0;
+}

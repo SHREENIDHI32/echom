@@ -28,24 +28,24 @@
 }
 
 .food-item-name-rating p {
-    font-size: 30px; /* Adjust font size for compactness */
+    font-size: 16px; /* Adjust font size for compactness */
     font-weight: 500;
     margin: 0;
 }
 
 .food-item-name-rating img {
-    width: 100px; /* Adjust rating star image size */
+    width: 60px; /* Adjust rating star image size */
 }
 
 .food-item-desc {
     color: #676767;
-    font-size: 240px; /* Reduced font size for compactness */
+    font-size: 12px; /* Reduced font size for compactness */
     margin: 5px 0; /* Reduced spacing */
 }
 
 .food-item-price {
     color: #FF4C24;
-    font-size: 30px; /* Adjusted font size */
+    font-size: 18px; /* Adjusted font size */
     font-weight: 500;
     margin: 5px 0; /* Reduced spacing */
 }

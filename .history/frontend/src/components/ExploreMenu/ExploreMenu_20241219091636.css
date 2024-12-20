@@ -4,7 +4,6 @@
     flex-direction: column;
     gap: 20px;
     align-items: center; /* Ensure uniform alignment for content */
-    padding: 20px; /* Add padding to prevent top overlap */
 }
 
 /* Heading Style */
@@ -12,7 +11,6 @@
     color: #262626;
     font-weight: 500;
     text-align: center; /* Align heading to the center */
-    margin-bottom: 10px; /* Add spacing below the heading */
 }
 
 /* Description Text */
@@ -21,7 +19,6 @@
     color: #808080;
     text-align: center; /* Align text to the center */
     line-height: 1.5;
-    margin-bottom: 20px; /* Add spacing below the description text */
 }
 
 /* Explore Menu List */
@@ -29,10 +26,9 @@
     display: flex;
     justify-content: center; /* Center items */
     align-items: center;
-    gap: 40px; /* Add space between items */
-    margin: 20px 0; /* Add margin above and below the list */
-    overflow-x: scroll; /* Enable horizontal scrolling for overflow */
-    padding: 10px; /* Add padding to prevent overlap with the container */
+    gap: 30px;
+    margin: 20px 0;
+    overflow-x: scroll;
     text-align: center;
 }
 
@@ -42,16 +38,11 @@
 }
 
 /* Menu List Item */
-.explore-menu-list-item {
-    margin: 10px; /* Add margin around each item */
-}
-
 .explore-menu-list-item img {
-    width: 90px; /* Fixed width for uniform size */
-    height: 90px; /* Fixed height for uniform size */
+    width: 7.5vw;
+    min-width: 80px;
     cursor: pointer;
-    border-radius: 50%; /* Circular shape */
-    object-fit: cover; /* Crop and maintain aspect ratio */
+    border-radius: 50%;
     transition: transform 0.2s; /* Smoother hover effect */
 }
 
@@ -60,7 +51,7 @@
 }
 
 .explore-menu-list-item .active {
-    border: 4px solid #ff6347;
+    border: 4px solid tomato;
     padding: 2px;
     border-radius: 50%; /* Maintain circular shape for active items */
 }
@@ -88,9 +79,5 @@
         max-width: 100%;
         font-size: 14px;
         text-align: center; /* Ensure consistent alignment */
-    }
-
-    .explore-menu-list {
-        gap: 20px; /* Reduce spacing between items for smaller screens */
     }
 }
